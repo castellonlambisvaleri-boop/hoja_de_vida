@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoja de vida</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="mb-4">
+        <h1 class="text-center display-4 fw-bold">HOJA DE VIDA</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow-sm mb-3">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#informacion-personal">Información Personal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                 
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <section id="informacion-personal" class="mb-4">
+            <div class="card shadow-lg border-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 d-flex justify-content-center p-3">
+                        <img src="valeri.png" alt="imagen de perfil de valeri castellon" class="rounded-circle border border-3 border-info shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="col-12 col-md-8 p-3">
+                        <h2 class="text-center text-md-start mb-3">Información Personal</h2>
+                        <p class="mb-2"><strong>Nombre:</strong> valeri castellon lambis </p>
+                        <p class="mb-2"><strong>Edad:</strong> 18 años</p>
+                        <p class="mb-2"><strong>Ubicación:</strong> lorica, Córdoba</p>
+                        <p class="mb-2"><strong>Correo Electrónico:</strong> vcastellonl@unicartagena.edu.co</p>
+                        <p>Estudiante universitaria de Ingeniería de software con aprecio por la tecnología y los avances que esta ha tenido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+
+    <section id="educacion" class="mb-4">
+        <h2 class="text-center mb-4">Educación</h2>
+            </li>
+            <li class="list-group-item mb-3">
+                <h3 class="text-primary">Universidad de Cartagena</h3>
+                <p><strong>Programa:</strong> Ingeniería de software </p>
+                <p><strong>Año de Ingreso:</strong> 2024</p>
+                <p><strong>Semestre en curso:</strong> 4 semestres</p>
+                <p><strong>Cursos relevantes:</strong> Programación, Bases de Datos, Ingeniería de Requerimientos, Desarrollo de Software </p>
+                <p><strong>Espectativa en la carrera:</strong> conocer como la ingenieria de software brinda soluciones tecnologicas para nuestro entorno.</p>
+            </li>
+            <li class="list-group-item mb-3">
+                <h3 class="text-primary">SENA Sofia Plus</h3>
+                <p><strong>Programa:</strong> Técnico en mantenimiento de equipos de computo </p>
+                <p><strong>Año de ingreso:</strong> 2025 </p>
+                <p><strong>Asignaturas relevantes:</strong> mantenimiento lógico, sistemas operativos, mantenimiento preventivo </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="habilidades" class="mb-4">
+        <h2 class="text-center mb-4">Habilidades</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Resolución de problemas y pensamiento crítico</li>
+            <li class="list-group-item">Trabajo en equipo y colaboración</li>
+            <li class="list-group-item">Manejo básico de HTML y CSS</li>
+            <li class="list-group-item">Aprecio por la búsqueda de soluciones a diferentes problemáticas que se puedan presentar</li>
+            <li class="list-group-item">Capacidad de adaptación y aprendizaje continuo</li>
+        </ul>
+    </section>
+   
+
+    <section id="contacto" class="mb-4">
+        <h2 class="text-center mb-4">Contacto</h2>
+    <form id="form-contacto" class="needs-validation mx-auto" style="max-width: 500px;" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,}$">
+                <div class="invalid-feedback">Por favor ingrese su nombre (solo letras, mínimo 3 caracteres).</div>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^[0-9]{7,15}$">
+                <div class="invalid-feedback">Ingrese un número de teléfono válido (solo números, mínimo 7 dígitos).</div>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+                <div class="invalid-feedback">Ingrese un correo electrónico válido.</div>
+            </div>
+            <div class="mb-3">
+                <label for="proposito" class="form-label">Propósito</label>
+                <select class="form-select" id="proposito" name="proposito" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <div class="invalid-feedback">Seleccione el propósito del contacto.</div>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required minlength="10"></textarea>
+                <div class="invalid-feedback">Por favor escriba su mensaje (mínimo 10 caracteres).</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+        <div id="imagen-exito" class="text-center mt-4" style="display:none;">
+            <img src="valeri.png" alt="Validación exitosa" style="width:120px; height:120px; border-radius:50%; border:3px solid #02ebf3; box-shadow:0 2px 10px #e90cd7a0;">
+            <div class="mt-2 text-success fw-bold">¡Formulario validado correctamente!</div>
+        </div>
+    </section>
+
+    <script>
+      // Validación de formulario de contacto con Bootstrap y JS
+        $(function() {
+            $('#form-contacto').on('submit', function(event) {
+              var form = this;
+                 if (!form.checkValidity()) {
+                  event.preventDefault();
+                    event.stopPropagation();
+                 }
+                   $(form).addClass('was-validated');
+                });
+        });
+    </script>
+        <script src="style.js"></script>
+
+   
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #000000;
+    background: linear-gradient(60deg, #000000,rgb(2, 235, 243), #e90cd7);
+    padding: 20px;
+}
+h3{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    text-align: center;
+    color: blueviolet;
+}
+
+header, section{
+    max-width: 800px;
+    background: rgb(233, 226, 212);
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.664);
+
+}
+header h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #840c88;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ul li a, .nav-link {
+    text-decoration: none;
+    color: #6c3483;
+    padding: 5px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: none;
+    transition: background 0.4s, color 0.4s, box-shadow 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+ul li a:hover, .nav-link:hover {
+    background: linear-gradient(90deg, #e90cd7 0%, #02ebf3 100%);
+    color: #fff;
+    box-shadow: 0 2px 10px #e90cd7a0;
+}
+ul li a:focus, .nav-link:focus {
+    outline: none;
+    background: linear-gradient(90deg, #e90cd7 0%, #02ebf3 100%);
+    color: #fff;
+    box-shadow: 0 2px 10px #e90cd7a0;
+}
+ul li a:active, .nav-link:active {
+    background: linear-gradient(90deg, #02ebf3 0%, #e90cd7 100%);
+    color: #fff;
+}
+h2{
+    font-size: 1.8em;
+    text-align: center;
+    color: black;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    background: #5a4c4c18;
+}
+
+#informacion-personal div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+#informacion-personal img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 2px solid #cc19b4;
+}
+ul{
+    list-style: disc;
+    margin-top: 10px;
+}
+
+ul li{
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+ul li p{
+    margin: 3px 0;
+}
+#educacion ul li, #experiencia ul li, #habilidades ul li{
+    background: #3a383813;
+    padding: 10px;
+    border-left: 5px solid #ccc919;
+}
+@media (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+    header, section{
+        padding: 15px 20px;
+    }
+    header h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    #informacion-personal div{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #informacion-personal img{
+        width: 100px;
+        height: 100px;
+    }
+}
